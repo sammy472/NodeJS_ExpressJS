@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <div style="margin: 100px;">
+        <form action="/login" method="POST" enctype="multipart/form-data">
+            <h3>Login</h3>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" style="display: block;" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" style="display: block;" required>
+            <label for="photo">Choose a file</label>
+            <input type="file" name="photo" id="password" style="display: block;" required accept="image/*">
+            <label for="color">Choose color</label>
+            <input type="radio" name="color" value="Red" id="red" style="display: block;">
+            <label for="red">Red</label>
+            <input type="radio" name="color" value="Blue" id="blue" style="display: block;">
+            <label for="blue">Blue</label>
+            <input type="radio" name="color" value="Green" id="green" style="display: block;">
+            <label for="green">Green</label>
+            <p>Choose Country</p>
+            <select name="country" id="country">
+                <option value="Ghana">Ghana</option>
+                <option value="Togo">Togo</option>
+                <option value="Benin">Benin</option>
+                <option value="Morocco">Morocco</option>
+            </select>
+            <label for="date">Date of birth</label>
+            <input type="date" name="date" id="date">
+            <input type="checkbox" name="fruits" value="Apple" id="apple">
+            <label for="apple">Apple</label>
+            <input type="checkbox" name="fruits" value="Mango" id="mango">
+            <label for="mango">Mango</label>
+            <input type="checkbox" name="fruits" value="Orange" id="orange">
+            <label for="apple">Orange</label>
+            <input type="submit" value="Login" style="display: block;">
+        </form>
+    </div>
+
+
+</body>
+</html>

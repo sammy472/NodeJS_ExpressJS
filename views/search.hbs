@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search</title>
+</head>
+<body>
+    {{#if filteredProducts}}
+        <ul>
+            {{#each filteredProducts}}
+                <li>{{this.name}}</li>
+            {{/each}}
+        </ul>
+    {{/if}}
+    <a href="/">Return</a>    
+</body>
+</html>
